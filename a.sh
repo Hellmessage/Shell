@@ -16,9 +16,7 @@ echo -e "\033[32m###################################\033[0m"
 
 
 read Data
-if [ $Data =  ];then
-        echo "请输入对应的编码"
-elif [ $Data = 1 ];then
+if [ $Data = 1 ];then
         cd /usr/local/nginx/html/Socket/
         rm -rf Socket/
         php start.php stop
